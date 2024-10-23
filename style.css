@@ -1,0 +1,161 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@100;200;300;400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+/* Mengatur font default */
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Warna teks tertentu */
+span {
+    color: rgb(49, 108, 244);
+}
+
+.brand-span {
+    font-weight: 300;
+    color: #ffffff;
+}
+
+/* Background untuk body */
+body {
+    background: whitesmoke;
+}
+
+/* Gaya teks brand */
+.brand {
+    font-weight: 200;
+    color: #ffffff;
+}
+
+/* Padding untuk section */
+.section-padding {
+    padding: 100px 0;
+}
+
+/* Mengatur carousel item */
+.carousel-item {
+    height: 100vh;
+    min-height: 300px;
+}
+
+/* Caption pada carousel */
+.carousel-caption {
+    bottom: 220px;
+    z-index: 2;
+}
+
+.carousel-caption h5 {
+    font-size: 45px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-top: 25px;
+}
+
+.carousel-caption p {
+    width: 60%;
+    margin: auto;
+    font-size: 18px;
+    line-height: 1.9;
+}
+
+.carousel-inner::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 1;
+}
+
+/* Navbar */
+.navbar {
+    padding: 5px 20px;
+}
+
+.navbar-nav a {
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+.navbar-nav a:hover {
+    color: rgb(49, 108, 244) !important;
+}
+
+.navbar-brand {
+    display: flex;
+    align-items: center;
+    color: white;
+    font-weight: 400;
+    transition: .3s all ease;
+}
+
+.navbar-brand img {
+    width: 70px; /* Ukuran logo */
+    margin-right: 10px;
+}
+
+.navbar-brand:hover {
+    transform: scale(1.1);
+}
+
+/* Gaya navbar-dark */
+.navbar-dark .navbar-brand {
+    color: #ffffff;
+    font-size: 25px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.navbar-dark .navbar-brand:focus,
+.navbar-dark .navbar-brand:hover {
+    color: #ffffff;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: #ffffff
+}
+
+/* Mengatur tinggi section full viewport */
+.w-100 {
+    height: 100vh;
+}
+
+/* Kartu-kartu pada portfolio dan services */
+.portfolio .card,
+.services .card,
+.team .card {
+    box-shadow: 12px 12px 30px rgba(0, 0, 0, 0.3);
+}
+
+/* Gaya responsif untuk carousel caption */
+@media only screen and (min-width : 768px) and (max-width : 991px) {
+    .carousel-caption {
+        bottom: 370px;
+    }
+    .carousel-caption p {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width : 767px) {
+    .navbar-nav {
+        text-align: center;
+    }
+    .carousel-caption {
+        bottom: 125px;
+    }
+    .carousel-caption h5 {
+        font-size: 17px;
+    }
+    .carousel-caption a {
+        padding: 10px 15px;
+    }
+    .carousel-caption p {
+        width: 100%;
+        line-height: 1.6;
+        font-size: 1.6px;
+    }
+}
